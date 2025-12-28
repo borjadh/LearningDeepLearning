@@ -378,7 +378,7 @@ A convenience function matching the usual PyTorch `torchvision.models.resnet18` 
 
 ***
 
-![](restnet_architecture.png)
+![](resnet_architecture.png)
 
 ---
 
