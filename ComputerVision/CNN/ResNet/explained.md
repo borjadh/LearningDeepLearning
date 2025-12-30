@@ -458,5 +458,3 @@ Input:        [B, 1, 224, 224]  ← Single channel
 - **Parameters mostly in conv layers**: ~11M total for ResNet-18
 
 This exact progression matches the **original ResNet paper** architecture. The `AdaptiveAvgPool2d((1,1))` ensures it works with **any input size** (not just 224×224).[](https://arxiv.org/abs/1512.03385)
-
-![](layer_progression.png)
