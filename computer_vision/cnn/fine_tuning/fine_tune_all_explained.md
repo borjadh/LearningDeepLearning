@@ -160,13 +160,3 @@ trainer.test(model=lightning_model, datamodule=dm)
 ```
 - Runs the test loop on the CIFAR-10 test set and prints test metrics (here, `test_acc`).
 - The output shown in the notebook reports a `test_acc` around `0.7554` for that run.
-
----
-
-## What to document in `shared_utilities` (important dependency)
-This notebook relies on `shared_utilities.LightningModel` and `shared_utilities.Cifar10DataModule`, so the “true” training logic (loss function, accuracy computation, optimizer selection, dataloaders, etc.) lives there.
-
-If you want, attach `shared_utilities.py` too and an explanation can be written with the same line-by-line style.
-```
-
-[1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/75896238/91805cd4-0262-40cb-8765-fca742bbac70/7.6-part-3-resnet18-transfer-last-layer-only.ipynb)
