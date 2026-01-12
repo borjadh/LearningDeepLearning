@@ -17,3 +17,10 @@ __pycache__/
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# Datasets
+*.tar.gz
+
+# Folders
+logs/
+cifar-10-batches-py/
