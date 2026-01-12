@@ -24,3 +24,6 @@ Thumbs.db
 # Folders
 logs/
 cifar-10-batches-py/
+
+# PDF documentation
+*.pdf
