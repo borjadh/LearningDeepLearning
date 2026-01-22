@@ -787,8 +787,7 @@ Where:
 ## References
 
 1. **Original Paper**: "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale" (Dosovitskiy et al., 2020)
-2. **Implementation inspired by**: minGPT and timm library
-3. **Framework**: PyTorch + Lightning
+1. **Framework**: PyTorch + Lightning
 
 ---
 

@@ -59,7 +59,7 @@ class LightningModel(L.LightningModule):
         return optimizer
         
         
-class ImageNetDataModule(L.LightningDataModule):
+class Cifar10DataModule(L.LightningDataModule):
     def __init__(
         self,
         data_path="./",
@@ -78,7 +78,7 @@ class ImageNetDataModule(L.LightningDataModule):
         self.height_width = height_width
 
     def prepare_data(self):
-        datasets.ImageNet(root=self.data_path, download=True)
+        datasets.CIFAR10(root=self.data_path, download=True)
 
         if self.height_width is None:
             self.height_width = (32, 32)
@@ -102,14 +102,14 @@ class ImageNetDataModule(L.LightningDataModule):
         return
 
     def setup(self, stage=None):
-        train = datasets.ImageNet(
+        train = datasets.CIFAR10(
             root=self.data_path,
             train=True,
             transform=self.train_transform,
             download=False,
         )
 
-        self.test = datasets.ImageNet(
+        self.test = datasets.CIFAR10(
             root=self.data_path,
             train=False,
             transform=self.test_transform,
